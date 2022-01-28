@@ -8,8 +8,3 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-amazonProperties:
-    endpointUrl: ${END_URL}
-    accessKey: ${ACCESS_KEY}
-    secretKey: ${SECRET_KEY}
-    bucketName: ${BUCKET_NAME}

@@ -48,7 +48,6 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 		</dependency>
-		
 
 		<!-- Lombok -->
 		<dependency>
@@ -94,6 +93,7 @@
 			<artifactId>oauth2-oidc-sdk</artifactId>
 			<version>9.18</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
