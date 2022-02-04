@@ -78,8 +78,6 @@ public class SecurityUtil {
         } finally {
             spec.clearPassword();
         }
-        
-        // is this return null the reason why ?
         return null;
     }
 
