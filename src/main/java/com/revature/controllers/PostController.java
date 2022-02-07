@@ -30,7 +30,6 @@ public class PostController {
     @Autowired
     public PostService postService;
 
-
     /**
      * Adds a post to the database.
      *
@@ -53,7 +52,7 @@ public class PostController {
             return new ResponseEntity<>(new PostDTO(check), HttpStatus.CREATED);
         }
     }
-
+    
     /**
      * Returns a list of all the posts within the database.
      *
@@ -70,5 +69,6 @@ public class PostController {
     	posts.forEach(p -> postDtos.add(new PostDTO(p)));
         return new ResponseEntity<>(postDtos, HttpStatus.OK);
     }
+    
 }
 
