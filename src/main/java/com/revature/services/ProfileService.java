@@ -2,8 +2,6 @@ package com.revature.services;
 
 import java.util.List;
 
-import org.springframework.data.repository.query.Param;
-
 import com.revature.models.Profile;
 
 public interface ProfileService {
@@ -25,11 +23,6 @@ public interface ProfileService {
     List<Profile> getAllProfilesPaginated(int page);
 
 	public List<Profile> search(String query);
-	
-	List<Profile> getFollowers( int id);
-	
-	
-	
 	
 
 }

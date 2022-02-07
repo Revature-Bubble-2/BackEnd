@@ -38,7 +38,7 @@ public class Profile {
 	private String lastName;
 	@Column(name = "email", columnDefinition = "TEXT", nullable = false, unique = true)
 	private String email;
-	@Column(name = "verification", columnDefinition = "BOOLEAN", nullable = false)
+	@Column(name = "verification", columnDefinition = "BOOLEAN", nullable = true)
 	private boolean verification = false;
 	@Column(name = "imgurl", columnDefinition = "TEXT")
 	private String imgurl;
@@ -74,10 +74,7 @@ public class Profile {
 		this.verification = verification;
 	}
 
-
 	public Profile(String firstName) {
 		this.firstName = firstName;
 	}
-
-
 }
